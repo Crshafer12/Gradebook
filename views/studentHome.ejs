@@ -1,0 +1,115 @@
+<%- include("partials/header") -%>
+
+    <body>
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" ><img src="/images/book.png" height="50"
+                        alt="Page Logo" />GradeBook</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation"><span
+                        class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" aria-current="page" href="/home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/about1">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/contact1">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="/studentHome">Student Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/profile">Profile</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/details">Site Details</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class=" col row justify-content-center align-items-center h-100">
+                    <h1 class="text-center">Profile</h1>
+                    <div class="col col-lg-10 mb-4 mb-lg-10">
+                        <div class="card" style="border-radius: .5rem;">
+                            <div class="row g-0">
+                                <div class="col-md-4 gradient-custom2 text-center text-white"
+                                    style="border-radius: .5rem; border-bottom-left-radius: .5rem;">
+                                    <img src="/images/blank.png" alt="Avatar" class="img-fluid my-5"
+                                        style="width: 80px;" />
+                                    <h5>Student Name</h5>
+
+                                    <p>
+                                        <%= user.firstname %>
+
+                                            <%= user.lastname %>
+                                    </p>
+                                    <h5>Current Standing:</h5>
+                                    <p>
+                                        <%= user.class %>
+                                    </p>
+                                    <i class="far fa-edit mb-5"></i>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body p-4">
+                                        <h4 class="text-center">Information</h4>
+                                        <hr class="mt-0 mb-4">
+                                        <div class="row pt-1">
+                                            <div class="mb-3">
+                                                <h5>Email</h5>
+                                                <p>
+                                                    <%= user.username %>
+                                                </p>
+                                                <h5>Phone Number</h5>
+                                                <p>
+                                                    <%= user.number %>
+                                                </p>
+
+                                                <!-- <p class="text-muted">123 456 789</p> -->
+                                            </div>
+                                        </div>
+                                        <a class="btn btn-primary" href="/profile">Edit Profile</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col justify-content-center align-items-center h-100">
+                    <h1 class="text-center">Grades</h1>
+                    <div class="col col-lg-10 mb-4 mb-lg-10">
+                        <table class="table table-light ">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Class</th>
+                                    <th scope="col">Professor</th>
+                                    <th scope="col">Grade</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Class 1</td>
+                                    <td>Dr. Hasbulla</td>
+                                    <td>44</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Class 2</td>
+                                    <td>Dr. Oz</td>
+                                    <td>21</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>Class 3</td>
+                                    <td>Dr. Disrespect</td>
+                                    <td>69</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <%- include("partials/footer") -%>

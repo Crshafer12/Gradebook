@@ -1,0 +1,81 @@
+<%- include("partials/header") -%>
+
+    <body>
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" ><img src="/images/book.png" height="50" alt="Page Logo" />GradeBook</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
+                        class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="/">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/login">Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page Content-->
+        <div class="container px-4 px-lg-5 ">
+            <!-- Heading Row-->
+            <div class="row gx-4 gx-lg-5 align-items-center my-5">
+                <div class="col-lg-7">
+                    <img src="/images/grades.png" alt="Page Logo" />
+                </div>
+                <div class="col-lg-5">
+                    <h1 class="font-weight-light">GradeBook</h1>
+                    <p>GradeBook is a website designed to meet all of your grading needs! Students can access and view all of thier grades in one, user-freindly spot. Teachers can easily adjust and manage all the grades of their students in one convient
+                        place.</p>
+                    <a class="btn btn-primary" href="/logIn">Get Started</a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Content Row-->
+        <div class="container px-4">
+            <h2 class="pre-card pb-2 border-bottom">What makes GradeBook great!</h2>
+
+            <div class="row gx-4 gx-lg-5">
+                <div class="col-md-4 mb-5">
+                    <div class="feature col card h-100">
+                        <div>
+                            <img src="/images/laptop.png" class="rounded mx-auto d-block img-fluid " alt="...">
+                        </div>
+                        <h2 class="card-title card-body">Well Designed and Functional</h2>
+                        <p class="card-subtitle">GradeBook has spent the last year learning from our 4+ customers and more than 20 users about what products and services students need to be successful.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-5">
+                    <div class="feature col card h-100">
+                        <div>
+                            <img src="/images/easy-to-use.png" class="rounded mx-auto d-block img-fluid " alt="...">
+                        </div>
+                        <h2 class="card-title card-body">Easy to Use</h2>
+                        <p class="card-subtitle">Elementary students don’t learn the same way as college students or adults. GradeBook was designed for all students—from kindergarten through 12th grade—to be fully engaged with their learning.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-5">
+                    <div class="feature col card h-100">
+                        <div>
+                            <img src="/images/booking.png" class="rounded mx-auto d-block img-fluid " alt="...">
+                        </div>
+                        <h2 class="card-title card-body">Optimized for Mobile</h2>
+                        <p class="card-subtitle">Gradebook is accessible where ever it isneeded. From in the classroom, on the bus, or on the run, the mobile site is as functional as ever!</p>
+                    </div>
+                </div>
+                <div class="col text-center p-5"><a class="btn btn-primary btn-lg sp-5" href="/about">More Info</a>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+        <%- include("partials/footer") -%>
