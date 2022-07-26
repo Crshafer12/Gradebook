@@ -220,7 +220,7 @@ app.post("/updateProfile", function (req, res) {
 	const userLastName = req.body.lastname;
 	const userClass = req.body.class;
 	const userNumber = req.body.number;
-	//console.log(userFirstName);
+
 	User.findById(req.user.id, function (err, foundUser) {
 		if (err) {
 			console.log(err);
