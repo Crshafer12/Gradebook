@@ -9,5 +9,5 @@ npm-debug.log
 
 # misc
 .env
-/css
-styles.css
+# /css
+# styles.css
