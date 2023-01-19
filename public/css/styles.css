@@ -36,6 +36,13 @@ body {
   /* Footer height */
 }
 
+@media screen and (max-width: 768px) {
+  .logpic {
+    display: none;
+  }
+}
+
+
 .gradient-custom2 {
   /* fallback for old browsers */
   background: #f6d365;
